@@ -1,7 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+:root {
+  /* color scheme */
+  --bg: #263238;
+  --bg1: #2e3c43;
+  --bg2: #314549;
+  --bg3: #546e72;
+  --fg: #eeffff;
+  --fg1: #ffffff;
+  --primary: #82aaff;
+  --primary2: #89ddff;
+  --secondary: #c792ea;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.card-body {
+  background-color: var(--bg2);
+}
+
+a,
+.nav-link {
+  color: var(--primary);
+}
+
+a:hover,
+.nav-link:hover {
+  color: var(--primary2);
+}
+
+.btn {
+  border: none;
+}
+
+.btn-primary {
+  color: var(--fg1);
+  background-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary2);
+}
+
+.card {
+  border: 1px solid rgba(178, 204, 214, 50);
+}
+
+.accordion-button {
+  color: var(--primary);
+  background-color: var(--bg2);
+}
+
+.accordion-body {
+	color: var(--fg);
+	background-color: var(--bg2);
+}
 
 #home {
-	font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 #typing-demo-container {
@@ -14,7 +73,7 @@
 
 #typing-demo {
   width: 13ch;
-  animation: typing 2s steps(13), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(13), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -23,12 +82,12 @@
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
