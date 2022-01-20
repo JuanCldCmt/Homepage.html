@@ -6,3 +6,9 @@
 #searchcontainer {
 	max-width: 60%;
 }
+
+@media (max-width: 1200px) {
+	#searchcontainer {
+		max-width: 80%;
+	}
+}
